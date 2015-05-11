@@ -360,7 +360,7 @@ class Twitch
 
 	def get(url)
 		c = HTTParty.get(url)
-		{:body => c, :response => c.code}
+		#{:body => c, :response => c.code}
 	end
 
 	def put(url, data={})
